@@ -1,0 +1,92 @@
+# Generated with protoc-gen-openapi
+# https://github.com/google/gnostic/tree/master/cmd/protoc-gen-openapi
+
+openapi: 3.0.3
+info:
+    title: 文件服务
+    description: 文件服务
+    contact:
+        name: your name
+    version: 0.0.1
+paths:
+    /file/upload:
+        post:
+            tags:
+                - OSS
+            description: 文件上传
+            operationId: OSS_UploadFile
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/file.v1.UploadFileRequest'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/file.v1.UploadFileResponse'
+    /oss/sts/token:
+        get:
+            tags:
+                - OSS
+            description: 获取ossToken
+            operationId: OSS_GetOssStsToken
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/file.v1.OssStsTokenResponse'
+components:
+    schemas:
+        file.v1.OssStsTokenResponse:
+            type: object
+            properties:
+                accessKey:
+                    type: string
+                    description: access_key
+                accessSecret:
+                    type: string
+                    description: access_secret
+                expiration:
+                    type: string
+                    description: 过期时间
+                securityToken:
+                    type: string
+                    description: 安全令牌
+                endPoint:
+                    type: string
+                    description: 终端
+                bucketName:
+                    type: string
+                    description: 存储桶
+                region:
+                    type: string
+                    description: 区域
+                url:
+                    type: string
+                    description: url
+            description: 响应 - OSS前端直传信息
+        file.v1.UploadFileRequest:
+            type: object
+            properties:
+                fileName:
+                    type: string
+                fileType:
+                    type: string
+                content:
+                    type: string
+                    format: bytes
+            description: 请求 - 文件上传
+        file.v1.UploadFileResponse:
+            type: object
+            properties:
+                url:
+                    type: string
+            description: 响应 - 文件上传url
+tags:
+    - name: OSS
