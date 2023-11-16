@@ -10,9 +10,9 @@ import (
 	"github.com/alibabacloud-go/tea/tea"
 	"github.com/go-kratos/kratos/v2/log"
 
-	ossV1 "repo.example.com/oss/api/oss/v1"
-	"repo.example.com/oss/internal/biz"
-	"repo.example.com/oss/internal/domain"
+	ossV1 "github.com/ZQCard/kbk-oss/api/oss/v1"
+	"github.com/ZQCard/kbk-oss/internal/biz"
+	"github.com/ZQCard/kbk-oss/internal/domain"
 )
 
 type FileRepo struct {

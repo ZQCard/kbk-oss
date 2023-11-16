@@ -6,8 +6,8 @@ import (
 	"github.com/go-kratos/kratos/v2/log"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	ossV1 "repo.example.com/oss/api/oss/v1"
-	"repo.example.com/oss/internal/biz"
+	ossV1 "github.com/ZQCard/kbk-oss/api/oss/v1"
+	"github.com/ZQCard/kbk-oss/internal/biz"
 )
 
 type FileService struct {

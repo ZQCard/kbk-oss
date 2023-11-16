@@ -12,8 +12,8 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 
-	"repo.example.com/oss/internal/conf"
-	"repo.example.com/oss/pkg/middleware/requestInfo"
+	"github.com/ZQCard/kbk-oss/internal/conf"
+	"github.com/ZQCard/kbk-oss/pkg/middleware/requestInfo"
 )
 
 // ProviderSet is data providers.

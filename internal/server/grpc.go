@@ -1,9 +1,9 @@
 package server
 
 import (
-	ossV1 "repo.example.com/oss/api/oss/v1"
-	"repo.example.com/oss/internal/conf"
-	"repo.example.com/oss/internal/service"
+	ossV1 "github.com/ZQCard/kbk-oss/api/oss/v1"
+	"github.com/ZQCard/kbk-oss/internal/conf"
+	"github.com/ZQCard/kbk-oss/internal/service"
 
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-kratos/kratos/v2/middleware/logging"

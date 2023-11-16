@@ -9,11 +9,11 @@ package main
 import (
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"
-	"repo.example.com/oss/internal/biz"
-	"repo.example.com/oss/internal/conf"
-	"repo.example.com/oss/internal/data"
-	"repo.example.com/oss/internal/server"
-	"repo.example.com/oss/internal/service"
+	"github.com/ZQCard/kbk-oss/internal/biz"
+	"github.com/ZQCard/kbk-oss/internal/conf"
+	"github.com/ZQCard/kbk-oss/internal/data"
+	"github.com/ZQCard/kbk-oss/internal/server"
+	"github.com/ZQCard/kbk-oss/internal/service"
 )
 
 import (

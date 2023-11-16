@@ -3,8 +3,8 @@ package biz
 import (
 	"context"
 
+	"github.com/ZQCard/kbk-oss/internal/domain"
 	"github.com/go-kratos/kratos/v2/log"
-	"repo.example.com/oss/internal/domain"
 )
 
 type FileRepo interface {

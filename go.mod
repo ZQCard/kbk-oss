@@ -1,4 +1,4 @@
-module repo.example.com/oss
+module github.com/ZQCard/kbk-oss
 
 
 go 1.20

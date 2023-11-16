@@ -4,7 +4,7 @@ import (
 	"flag"
 	"os"
 
-	"repo.example.com/oss/pkg/utils/loggerHelper"
+	"github.com/ZQCard/kbk-oss/pkg/utils/loggerHelper"
 
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/config"
@@ -15,7 +15,7 @@ import (
 	"github.com/go-kratos/kratos/v2/transport/http"
 	_ "go.uber.org/automaxprocs"
 
-	"repo.example.com/oss/internal/conf"
+	"github.com/ZQCard/kbk-oss/internal/conf"
 )
 
 // go build -ldflags "-X main.Version=x.y.z"

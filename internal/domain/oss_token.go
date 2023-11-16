@@ -1,8 +1,8 @@
 package domain
 
 import (
+	ossV1 "github.com/ZQCard/kbk-oss/api/oss/v1"
 	"github.com/jinzhu/copier"
-	ossV1 "repo.example.com/oss/api/oss/v1"
 )
 
 type OssStsToken struct {
